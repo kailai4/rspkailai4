@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khemraj Koirala | RSP Kailali 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-gold: #ffcc00;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), 
+                        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80'); /* Replace with actual Kailali photo */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; }
+        header p { font-size: 1.2rem; font-weight: 300; }
+
+        /* Navigation Bar */
+        nav {
+            background: var(--white);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a { text-decoration: none; color: var(--primary-blue); font-weight: bold; font-size: 0.9rem; }
+
+        /* Cards Section */
+        .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card h3 { color: var(--primary-blue); margin-top: 0; }
+
+        /* Button Style */
+        .cta-btn {
+            display: inline-block;
+            background: var(--secondary-gold);
+            color: var(--text-dark);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            nav { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#vision">VISION</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<header id="home">
+    <h1>खेमराज कोइराला</h1>
+    <p>कैलाली क्षेत्र नं. ४ को विकास र समृद्धिका लागि एक संकल्प</p>
+    <a href="#vision" class="cta-btn">हाम्रो भिजन हेर्नुहोस्</a>
+</header>
+
+<div class="container" id="vision">
+    <h2 style="text-align: center; color: #0056b3;">आधुनिक कैलालीको खाका</h2>
+    <div class="vision-grid">
+        <div class="card">
+            <h3>स्मार्ट पूर्वाधार</h3>
+            <p>अत्तरिया र गोदावरीमा फुटपाथ, साइकल लेन र व्यवस्थित ढल निकाससहितको नमुना सडक सञ्जाल।</p>
+        </div>
+        <div class="card">
+            <h3>पारदर्शी सुशासन</h3>
+            <p>वडा तहसम्मै डिजिटल सेवा र भ्रष्टाचारमुक्त सार्वजनिक प्रशासनको ग्यारेन्टी।</p>
+        </div>
+        <div class="card">
+            <h3>युवा स्वरोजगार</h3>
+            <p>स्थानीय स्रोत र साधनको प्रयोग गरी कैलालीका युवाहरूलाई क्षेत्रमै रोजगारीको अवसर।</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="text-align: center;">
+    <div class="card" style="border-left: none; border-top: 5px solid #ffcc00;">
+        <h2>जनताको आवाज</h2>
+        <p>तपाईंको क्षेत्रको समस्या वा सुझाव हामीलाई सिधै पठाउनुहोस्।</p>
+        <a href="https://wa.me/977XXXXXXXXXX" class="cta-btn" style="background: #25D366; color: white;">WhatsApp बाट सुझाव दिनुहोस्</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 RSP Kailali 4 - Digital Media Team</p>
+    <p>नेपालको भविष्य, हाम्रो हातमा।</p>
+</footer>
+
+</body>
+</html>
